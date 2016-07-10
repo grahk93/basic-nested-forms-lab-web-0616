@@ -1,3 +1,47 @@
 <%= form_for @recipe do |f| %>
   Title: <%= f.text_field :title %>
-<% end %>
+  <%=f.fields_for :ingredients do |ing| %>
+    <%=ing.label :name_1 %>
+    <%=ing.text_field :name_1 %> <br>
+    <%=ing.label :quantity_1 %>
+    <%=ing.text_field :quantity_1 %><br />
+     <%=ing.label :name_2 %>
+    <%=ing.text_field :name_2 %> <br>
+    <%=ing.label :quantity_2 %>
+    <%=ing.text_field :quantity_2 %><br />
+     <%=ing.label :name_3 %>
+    <%=ing.text_field :name_3 %> <br>
+    <%=ing.label :quantity_3 %>
+    <%=ing.text_field :quantity_3 %><br />
+    <%=ing.label :name_4 %>
+    <%=ing.text_field :name_4 %> <br>
+    <%=ing.label :quantity_4 %>
+    <%=ing.text_field :quantity_4 %><br />
+     <%=ing.label :name_5 %>
+    <%=ing.text_field :name_5 %> <br>
+    <%=ing.label :quantity_5 %>
+    <%=ing.text_field :quantity_5 %><br />
+     <%=ing.label :name_6 %>
+    <%=ing.text_field :name_6 %> <br>
+    <%=ing.label :quantity_6 %>
+    <%=ing.text_field :quantity_6 %><br />
+    <%=ing.label :name_7 %>
+    <%=ing.text_field :name_7 %> <br>
+    <%=ing.label :quantity_7 %>
+    <%=ing.text_field :quantity_7 %><br />
+     <%=ing.label :name_8 %>
+    <%=ing.text_field :name_8 %> <br>
+    <%=ing.label :quantity_8 %>
+    <%=ing.text_field :quantity_8 %><br />
+     <%=ing.label :name_9 %>
+    <%=ing.text_field :name_9 %> <br>
+    <%=ing.label :quantity_9 %>
+    <%=ing.text_field :quantity_9 %><br />
+     <%=ing.label :name_10 %>
+    <%=ing.text_field :name_10 %> <br>
+    <%=ing.label :quantity_10 %>
+    <%=ing.text_field :quantity_10 %><br />
+    <%=f.submit%>
+    <% end %>
+    <% end %>
+
